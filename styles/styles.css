@@ -7,6 +7,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
 }
 
+span {
+    font-size: 16px;
+}
+
 .header {
     height: 100%;
     display: flex;
@@ -56,8 +60,74 @@ h4 {
 
 .body {
     background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.body > .left-column {
+    padding: 75px;
+    width: 250px;
+    height: 476px;
+}
+
+.body > .left-column > .content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.body > .right-column {
+    padding: 75px;
+    padding-left: 0;
 }
 
 .body h1 {
     margin: 0;
+    font-size: 50px;
+}
+
+.body > .right-column > .images {
+    display: flex;
+
+}
+
+.body > .right-column > .images > .image {
+    display: flex;
+    padding: 5px;
+    position: relative;
+
+}
+
+.body > .right-column > .images > .image img {
+    width: 290px;
+    height: 476px;
+    float: left;
+}
+
+.body > .right-column > .images > .image > .white-text {
+    position: absolute;
+    bottom: 53px;
+    right: 5px;
+    background-color: white;
+    width: auto;
+    text-align: right;
+}
+
+.body > .right-column > .images > .image > .white-text h4 {
+    margin: 15px;
+}
+
+.body > .right-column > .images > .image > .green-text {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: #8dc728;
+    width: 50%;
+    text-align: right;
+}
+
+.body > .right-column > .images > .image > .green-text h4 {
+    margin: 15px;
 }
